@@ -23,6 +23,7 @@ body {
     background-image: url('../img/elegante-abstrato.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 40px;
 }
 
