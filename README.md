@@ -1,85 +1,119 @@
-# Sistema-de-Controle-de-Estacionamento
+# Sistema de Controle de Estacionamento
 
-Este é o trabalho da N1. O trabalho vale 10 pontos.
-Ele é individual. A avaliação será feita por meio de apresentação para o professor.
-Data da apresentação dia 04/06
+Projeto desenvolvido como trabalho prático da disciplina de JavaScript, com o objetivo de aplicar conceitos de manipulação de dados, armazenamento local e operações CRUD em uma aplicação web.
 
+## 📋 Sobre o Projeto
 
-Trabalho Prático — Sistema de Controle de Estacionamento em JavaScript
-Objetivo
-Desenvolver uma aplicação web simples utilizando HTML e JavaScript puro, com foco em:
+O Sistema de Controle de Estacionamento simula o gerenciamento de veículos em um estacionamento, permitindo o cadastro de veículos, controle de entrada e saída, além do registro de um histórico de movimentações.
 
-Manipulação de objetos em JavaScript;
-Uso de vetores/listas;
-Persistência de dados utilizando localStorage;
-Implementação de operações de CRUD;
-Manipulação de datas e horários;
-Organização lógica da aplicação.
-O sistema deverá simular o funcionamento de um estacionamento, permitindo controlar os carros cadastrados, a entrada e saída dos veículos e o histórico de permanência.
+Todos os dados são armazenados localmente utilizando o **localStorage**, dispensando a necessidade de um banco de dados externo.
 
-Descrição do Problema
-Um estacionamento precisa de um sistema simples para controlar os veículos que utilizam suas vagas.
+## 🎯 Objetivos de Aprendizagem
 
-O sistema deverá permitir:
+* Manipulação de objetos em JavaScript;
+* Utilização de arrays (vetores/listas);
+* Persistência de dados com localStorage;
+* Implementação das operações CRUD;
+* Manipulação de datas e horários;
+* Organização modular do código;
+* Desenvolvimento de interfaces utilizando HTML, CSS e JavaScript puro.
 
-Cadastrar veículos;
-Editar informações de veículos;
-Remover veículos;
-Registrar entrada de um carro no estacionamento;
-Registrar saída do carro;
-Manter um histórico das entradas e saídas realizadas.
-Todos os dados deverão ser armazenados utilizando o localStorage, funcionando como um pequeno banco de dados do navegador.
+## ⚙️ Funcionalidades
 
-Requisitos do Sistema
-1. Cadastro de Veículos
-O sistema deverá possuir uma tela/formulário para cadastrar veículos.
+### Cadastro de Veículos
 
-Cada veículo deverá possuir as seguintes informações:
+* Cadastro de novos veículos;
+* Validação para impedir placas duplicadas;
+* Armazenamento dos dados no navegador.
 
-Placa;
-Modelo;
-Cor;
-Nome do proprietário.
-Regras:
-Não permitir cadastro com placa repetida;
-2. CRUD de Veículos
-O sistema deverá permitir:
+### Gerenciamento de Veículos (CRUD)
 
-Criar
-Cadastrar novos veículos.
+* ➕ Criar veículos;
+* 📖 Listar veículos cadastrados;
+* ✏️ Editar informações dos veículos;
+* 🗑️ Excluir veículos.
 
-Ler
-Listar todos os veículos cadastrados.
+### Controle de Entrada e Saída
 
-Atualizar
-Editar os dados de um veículo já cadastrado.
+* Registro de entrada de veículos;
+* Registro de saída de veículos;
+* Controle do status do veículo:
 
-Deletar
-Remover um veículo do sistema.
+  * Dentro do estacionamento;
+  * Fora do estacionamento.
 
-3. Controle de Entrada e Saída
-Cada carro poderá estar em um dos seguintes estados:
+### Histórico de Movimentações
 
-Fora do estacionamento;
-Dentro do estacionamento.
-O sistema deverá possuir um botão para:
+* Registro automático de:
 
-Registrar entrada;
-Registrar saída.
-Ver o histórico de entrada e saída de um determinado veículo
-Registro de Entrada
-Ao registrar a entrada:
+  * Data;
+  * Hora;
+  * Status (Entrada ou Saída).
+* Consulta do histórico completo de movimentações.
 
-O sistema deve salvar:
-Data;
-Hora;
-Status.
-Registro de Saída
-Ao registrar a saída:
+## 🛠️ Tecnologias Utilizadas
 
-O sistema deve salvar:
-Data;
-Hora;
-Status.
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* LocalStorage
 
-Todos os atributos listados no problema foram apenas sugestões. Vocês são livre para tomar as decisões necessárias para a implementação da solução.
+## 📂 Estrutura do Projeto
+
+```text
+Sistema-de-Controle-de-Estacionamento/
+│
+├── index.html
+├── cadastrarVeiculo.html
+├── listarVeiculos.html
+├── controleEstacionamento.html
+├── historico.html
+│
+├── css/
+│   ├── style.css
+│   └── styles.css
+│
+├── js/
+│   ├── cadastrarVeiculo.js
+│   ├── listarVeiculos.js
+│   ├── controleEstacionamento.js
+│   └── historico.js
+│
+└── img/
+|   ├── branco-ondulado.png
+│   └── elegante-abstrato.png
+│
+```
+
+## 💾 Armazenamento de Dados
+
+A aplicação utiliza o **localStorage** do navegador para armazenar:
+
+* Veículos cadastrados;
+* Histórico de movimentações;
+* Informações temporárias para edição de registros.
+
+## ▶️ Como Executar
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/seu-usuario/Sistema-de-Controle-de-Estacionamento.git
+```
+
+2. Abra o arquivo `index.html` em qualquer navegador moderno.
+
+3. Utilize o sistema normalmente.
+
+## 📸 Funcionalidades Demonstradas
+
+* Cadastro de veículos;
+* Edição e exclusão de registros;
+* Controle de entrada e saída;
+* Histórico completo das movimentações.
+
+## 👩‍💻 Autora
+
+**Myrella Silvinha**
+
+Projeto desenvolvido para fins acadêmicos como atividade avaliativa da disciplina de JavaScript.
