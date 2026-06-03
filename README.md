@@ -98,7 +98,7 @@ A aplicação utiliza o **localStorage** do navegador para armazenar:
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/Sistema-de-Controle-de-Estacionamento.git
+git clone https://github.com/myrellasilvinha/Sistema-de-Controle-de-Estacionamento.git
 ```
 
 2. Abra o arquivo `index.html` em qualquer navegador moderno.
