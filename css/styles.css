@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+    --primary-color: #a47dab;
+    --secondary-color: #6c757d;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+::selection {
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+body {
+    background-image: url('../img/branco-ondulado.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 40px;
+    min-height: 100vh;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    width: 600px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    margin: 10px auto;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.salvar-form {
+    width: 100%;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ul li {
+    width: 250px;
+}
+
+ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+ul li a:hover {
+    transform: translateY(-8px);
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.return {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.return a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.return a:hover {
+    background: var(--secondary-color);
+}
+
+#lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+#lista li {
+    background: var(--background-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    font-size: 16px;
+    width: 100%;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#listaVeiculos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+#listaVeiculos li {
+    background: var(--background-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    font-size: 16px;
+    width: 100%;
+}
+
+#historico {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+#historico li {
+    width: 100%;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+.separador {
+    border: none;
+    border-top: 2px dashed var(--secondary-color);
+    margin: 15px 0;
+}
