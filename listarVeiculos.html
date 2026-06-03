@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/listarVeiculos.js" defer></script>
+    <title>Listar Veículos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="listar()">
+    <div class="container">
+        <h2>Veículos Cadastrados</h2>
+        <ul id="lista"></ul>
+
+        <div id="formulario" style="display:none">
+            Placa: <input type="text" id="placa"><br><br>
+            Modelo: <input type="text" id="modelo"><br><br>
+            Cor: <input type="text" id="cor"><br><br>
+            Proprietário: <input type="text" id="proprietario"><br><br>
+            <button onclick="confirmar()">Confirmar</button>
+        </div>
+    </div>
+    <div class="return">
+        <a href="index.html">Voltar</a>
+    </div>
+</body>
+</html>
