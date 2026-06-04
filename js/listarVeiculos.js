@@ -16,8 +16,8 @@ function listar() {
                 <p><strong>Cor:</strong><input type="text" id="cor${i}" value="${v.cor}"></p>
                 <p><strong>Proprietário:</strong><input type="text" id="proprietario${i}" value="${v.proprietario}"></p>
 
-                <button onclick="confirmar(${i})">Salvar</button>
-                <button onclick="cancelarEdicao()">Cancelar</button>
+                <button class="green" onclick="confirmar(${i})">Salvar</button>
+                <button class="red" onclick="cancelarEdicao()">Cancelar</button>
             </li>`;
         } else {
 
@@ -29,7 +29,7 @@ function listar() {
                 <p><strong>Proprietário:</strong> ${v.proprietario}</p>
 
                 <button onclick="editar(${i})">Editar</button>
-                <button onclick="excluir(${i})">Excluir</button>
+                <button class="red" onclick="excluir(${i})">Excluir</button>
             </li>`;
         }
     });

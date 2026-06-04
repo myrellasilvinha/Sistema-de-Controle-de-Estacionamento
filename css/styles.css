@@ -5,6 +5,8 @@
     --secondary-color: #6c757d;
     --background-color: #f4f4f4;
     --text-color: #333;
+    --red-color: #ff4d4d;
+    --green-color: #28a745;
 }
 
 * {
@@ -64,6 +66,16 @@ button {
     font-weight: 500;
     cursor: pointer;
     transition: background 0.3s ease;
+}
+
+.red {
+    background: var(--red-color);
+    color: var(--background-color);
+}
+
+.green{
+    background: var(--green-color);
+    color: var(--background-color);
 }
 
 .salvar-form {

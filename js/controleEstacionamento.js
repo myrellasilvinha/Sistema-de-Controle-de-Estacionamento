@@ -9,8 +9,8 @@ function carregarVeiculos() {
             <p><strong>Placa:</strong> ${v.placa}</p>
             <p><strong>Modelo:</strong> ${v.modelo}</p>
             <p><strong>Status:</strong> ${v.status}</p>
-            <button onclick="entrada('${v.placa}')">Entrada</button>
-            <button onclick="saida('${v.placa}')">Saída</button>
+            <button class="green" onclick="entrada('${v.placa}')">Entrada</button>
+            <button class="red" onclick="saida('${v.placa}')">Saída</button>
         </li>`;
     });
 }
