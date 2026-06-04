@@ -17,7 +17,6 @@ function listar() {
                 <p><strong>Proprietário:</strong><input type="text" id="proprietario${i}" value="${v.proprietario}"></p>
 
                 <button class="green" onclick="confirmar(${i})">Salvar</button>
-                <button class="red" onclick="cancelarEdicao(${i})">Cancelar</button>
             </li>`;
         } else {
 
