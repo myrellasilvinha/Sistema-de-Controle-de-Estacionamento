@@ -4,7 +4,7 @@ function salvar() {
     let cor = document.getElementById('cor').value;
     let proprietario = document.getElementById('proprietario').value;
 
-    let veiculos = JSON.parse(localStorage.getItem('veiculos')) || [];
+    let veiculos = JSON.parse(localStorage.getItem('veiculos')) || []; //se não tem valores, retorna null
 
     if (veiculos.find(v => v.placa === placa)) {
         alert('Placa já cadastrada');
