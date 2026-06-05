@@ -1,12 +1,13 @@
 function listar() {
     let veiculos = JSON.parse(localStorage.getItem('veiculos')) || [];
     let lista = document.getElementById('lista');
-    let editando = localStorage.getItem('indiceVeiculo');
+    let editando = localStorage.getItem('indiceVeiculo'); 
 
     lista.innerHTML = '';
 
     veiculos.forEach((v, i) => {
 
+        //Se o veículo estiver sendo editado, exibir o formulário
         if (editando == i) {
 
             lista.innerHTML += `
@@ -18,7 +19,7 @@ function listar() {
 
                 <button class="green" onclick="confirmar(${i})">Salvar</button>
             </li>`;
-        } else {
+        } else { //Não muda nada
 
             lista.innerHTML += `
             <li>
@@ -36,16 +37,17 @@ function listar() {
 
 function excluir(i) {
     let veiculos = JSON.parse(localStorage.getItem('veiculos')) || [];
-    veiculos.splice(i, 1);
+    veiculos.splice(i, 1); //Removendo o veículo da posição desejada
     localStorage.setItem('veiculos', JSON.stringify(veiculos));
     listar();
 }
 
 function editar(i) {
-    localStorage.setItem('indiceVeiculo', i);
+    localStorage.setItem('indiceVeiculo', i); //Guarda o índice do veículo que será editada
     listar();
 }
 
+//Atualiza os dados com os valores dos inputs
 function confirmar(i) {
 
     let veiculos = JSON.parse(localStorage.getItem('veiculos')) || [];
